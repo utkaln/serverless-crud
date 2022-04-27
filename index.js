@@ -42,7 +42,7 @@ exports.handler = async (event) => {
     .get({
       TableName: "nsc_1",
       Key: {
-        id: 1,
+        id: parseInt(event.pathParameters.id),
       },
     })
     .promise();
