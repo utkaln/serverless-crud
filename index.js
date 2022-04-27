@@ -1,5 +1,5 @@
 "use strict";
-console.log("Loading function");
+console.log("Loading function get-dynamo-test");
 const AWS = require("aws-sdk");
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
@@ -35,8 +35,6 @@ exports.handler = async (event) => {
   if (day) {
     greeting += `Happy ${day}`;
   }
-
-  console.log(`Path Found as ${event.pathParameters.id}`);
 
   dynamo_res = await dynamo
     .get({
