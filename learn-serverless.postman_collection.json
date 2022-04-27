@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "ed1cdf55-621e-42fb-9ac2-5fe83c3a0b01",
+		"name": "learn-serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://5395o2q6cc.execute-api.us-east-1.amazonaws.com/dev/hello/1?name=Utkal&city=WashingtonDC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "day",
+						"value": "Tuesday",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"time\":\"evening\"}"
+				},
+				"url": {
+					"raw": "https://5395o2q6cc.execute-api.us-east-1.amazonaws.com/dev/hello/1?name=Utkal&city=WashingtonDC",
+					"protocol": "https",
+					"host": [
+						"5395o2q6cc",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"hello",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Utkal"
+						},
+						{
+							"key": "city",
+							"value": "WashingtonDC"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
